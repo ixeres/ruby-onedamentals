@@ -17,6 +17,9 @@ else
     puts "How many toppings would you like on pizza number #{pizzacounter.to_s}?"
   toppings = gets.chomp.to_i
     puts "You've ordered a pizza with #{toppings} toppings."
-    pizzacounter += 1
+    pizzacounter += 1 #ups the count for the loop!
+    if pizzas == pizzacounter - 1 #find out when the order is done
+      puts "Got it! Thanks for your order! ...Jabroni."
+    end
   end
 end
