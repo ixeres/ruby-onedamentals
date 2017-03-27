@@ -14,8 +14,9 @@ else
   pizzas > 1
   pizzacounter = 1 #starts counting pizzas!
   pizzas.times do #make the loop!
-    puts "How many toppings would you like on pizza number #{pizzas.to_s}?"
+    puts "How many toppings would you like on pizza number #{pizzacounter.to_s}?"
   toppings = gets.chomp.to_i
     puts "You've ordered a pizza with #{toppings} toppings."
+    pizzacounter += 1
   end
 end
